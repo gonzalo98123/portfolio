@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    font-size: 24px;
+    
+}
+h3{
+    font-size: 20px;
+}
+p {
+    color: #6a6a6a;
+    font-size: 16px;
+}
+
+input,
+textarea,
+.btn {
+    border-radius: 15px !important;
+}
+
+textarea {
+    height: 150px;
+}
+
+#contacto, #index {
+    background-image: url("../images/fondo-contacto.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.p {
+    color: #6a6a6a;
+}
+
+.btn {
+    color: #370a6d;
+    background-color: white;
+    border: 0px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #370a6d;
+    border: none;
+}
+
+form input textarea {
+    border-radius: 0px;
+}
+
+footer {
+    color: #6a6a6a;
+    position: fixed;
+    bottom: 0px;
+}
+
+footer a {
+    color: #6a6a6a;
+}
+
+#proyectos, #sobre-mi {
+    background-image: url("../images/fondo-proyectos.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer .fa-github {
+    font-size: 30px;
+    color: red;
+}
+
+footer .fa-linkedin-in {
+    color: #ff4a49;
+    background-color: white;
+    font-size: 20px;
+    border: 0px;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    padding: 8px 0 0 0;
+    border-radius: 80px;
+    margin: 0 8px;
+}
+#sobre-mi .card{
+    text-size-adjust: 5px;
+}
+
+.whatsapp {
+    background-color: #370a6d;
+    color: white;
+    width: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    padding: 8px 0 15px 0;
+    right: 80px;
+    position: fixed;
+    bottom: 0px;
+}
+
+.whatsapp a {
+    color: white;
+}
+
+.btn-rojo {
+    background-color: #E20000;
+    color: white;
+    font-weight: 100;
+    border-radius: 15px;
+}
+
+#index .div-cohete {
+    height: 410px;
+}
+#index .input-home p {
+    color: white;
+    font-size: 17px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-weight: 600;
+}
+#index .p{
+    margin-bottom: 10px;
+}
+.img-circle {
+    margin: 1em auto;
+    display: block;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+.cohete{
+    height: 400px;
+}
+.div-cohete {
+    height: 410px;
+}
+
+nav .active {
+    border: 1px solid #E20000;
+    border-radius: 20px;
+}
+
+#proyectos p {
+    font-size: 14px;
+}
+
+#proyectos img {
+    height: 177px;
+}
+
+#proyectos .card p {
+    height: 90px
+}
+.color-gradiente{
+    background: rgba(184,37,20,1);
+    background: -moz-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(184,37,20,1)), color-stop(47%, rgba(214,52,30,1)), color-stop(70%, rgba(240,47,23,1)), color-stop(100%, rgba(240,47,23,1)));
+    background: -webkit-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
+    background: -o-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
+    background: -ms-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
+    background: linear-gradient(to right, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b82514', endColorstr='#f02f17', GradientType=1 );
+}
+#proyectos h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (max-width: 750px) {
+    #contacto, #index{
+        background-image: url("../images/fondo-proyectos.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #proyectos {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
