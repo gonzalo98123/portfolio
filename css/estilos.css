@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*GENERAL*/
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
 }
-
 h1 {
     color: red;
 }
-
 h2 {
     font-size: 24px;
     
@@ -20,66 +19,211 @@ p {
     color: #6a6a6a;
     font-size: 16px;
 }
-
 input,
 textarea,
 .btn {
     border-radius: 15px !important;
 }
-
 textarea {
     height: 150px;
 }
-
-#contacto, #index {
-    background-image: url("../images/fondo-contacto.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
 .p {
     color: #6a6a6a;
 }
-
 .btn {
     color: #370a6d;
     background-color: white;
     border: 0px;
     margin-top: 10px;
 }
-
 .btn:hover {
     color: white;
     background-color: #370a6d;
     border: none;
 }
+.btn-rojo {
+    background-color: #E20000;
+    color: white;
+    font-weight: 100;
+    border-radius: 15px;
+}
+.img-circle {
+    margin: 1em auto;
+    display: block;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+nav .active {
+    border: 1px solid #E20000;
+    border-radius: 20px;
+}
+.color-gradiente{
+    background: rgba(184,37,20,1);
+    background: -moz-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(184,37,20,1)), color-stop(47%, rgba(214,52,30,1)), color-stop(70%, rgba(240,47,23,1)), color-stop(100%, rgba(240,47,23,1)));
+    background: -webkit-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
+    background: -o-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
+    background: -ms-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
+    background: linear-gradient(to right, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b82514', endColorstr='#f02f17', GradientType=1 );
+}
+.baw {
+    -webkit-filter: grayscale(100%); 
+      filter: grayscale(100%);
+}
+.baw:hover {
+  -webkit-filter: grayscale(100%); 
+  filter:grayscale(0%);
+}
+
+/*INDEX*/
+#index .cohete:hover{
+    height: 410px;
+}
+#index .input-home p{
+    color:white;
+    font-size: 17px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-weight: 600;
+}
+#index .div-cohete {
+    height: 410px;
+}
+#index .input-home p {
+    color: white;
+    font-size: 17px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-weight: 600;
+}
+#index .p{
+    margin-bottom: 10px;
+}
+.cohete{
+    height: 400px;
+}
+.div-cohete {
+    height: 410px;
+}
+/*CONTACTO*/
+#contacto, #index {
+    background-image: url("../images/fondo-contacto.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+/*SOBRE NI*/
+#sobre-mi{
+    background-image: url(../images/fondo-proyectos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sobre-mi .card{
+    height: 182px;
+}
+#idiomas .card-idioma{
+    border-radius: 15px;
+}
+#idiomas .card{
+    background-color: #370A6D;
+    border-radius: 15px;
+    padding: 40px 0;
+}
+#idiomas{
+    background-color: #eee;
+}
+#idiomas h2{
+    font-size: 16px;
+    font-weight: 600px;
+}
+#idiomas ul{
+    padding: 0px;
+    font-size: 14px;
+    color: #282828;
+    list-style-type: none;
+}
+#idiomas .fas{
+    font-size: 80px;
+    color: white;
+}
+#experiencia h2, #experiencia h4 {
+   color: #370A6D;
+}
+#experiencia h2, #formacion h2 {
+    font-weight: 400;
+    font-size: 24px
+}
+#formacion h2, #formacion h4{
+    color: #E20000;
+}
+#experiencia h3, #formacion h3{
+    color: #6A6A6A;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+#experiencia h4, #formacion h4{
+    font-size: 17px;
+    
+}
+#experiencia h5, #formacion h5{
+    color: #6A6A6A;
+    font-size: 14px;
+}
+
+/*PROYECTOS*/
+#proyectos{
+    background-image: url(../images/fondo-proyectos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#proyectos .card p{
+    height: 90px
+}
+#proyectos footer, #proyectos footer a, #sobre-mi footer, #sobre-mi footer a{
+    color: #E20000;
+}
+#proyectos footer .fa-github, #sobre-mi footer .fa-github{
+    font-size: 30px;
+    color: #E20000;
+}
+#proyectos footer .fa-linkedin-in{
+    color: white;
+    background-color: #E20000;
+}
+#proyectos h2{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+#proyectos p{
+    font-size: 14px;
+}
+#proyectos img{
+    height: 177px;
+}
+
 
 form input textarea {
     border-radius: 0px;
 }
-
+/*FOOTER*/
 footer {
     color: #6a6a6a;
-    position: fixed;
     bottom: 0px;
 }
-
-footer a {
-    color: #6a6a6a;
+footer, footer a{
+    color: white;
+    font-weight: 100;
 }
-
-#proyectos, #sobre-mi {
-    background-image: url("../images/fondo-proyectos.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 footer .fa-github {
     font-size: 30px;
-    color: red;
-}
 
+}
 footer .fa-linkedin-in {
     color: #ff4a49;
     background-color: white;
@@ -92,10 +236,14 @@ footer .fa-linkedin-in {
     border-radius: 80px;
     margin: 0 8px;
 }
-#sobre-mi .card{
-    text-size-adjust: 5px;
+
+#proyectos, #sobre-mi {
+    background-image: url("../images/fondo-proyectos.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+/*boton whatsapp*/
 .whatsapp {
     background-color: #370a6d;
     color: white;
@@ -113,80 +261,16 @@ footer .fa-linkedin-in {
 .whatsapp a {
     color: white;
 }
-
-.btn-rojo {
-    background-color: #E20000;
-    color: white;
-    font-weight: 100;
-    border-radius: 15px;
-}
-
-#index .div-cohete {
-    height: 410px;
-}
-#index .input-home p {
-    color: white;
-    font-size: 17px;
-    border: 1px solid white;
-    border-radius: 50px;
-    font-weight: 600;
-}
-#index .p{
-    margin-bottom: 10px;
-}
-.img-circle {
-    margin: 1em auto;
-    display: block;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-}
-.cohete{
-    height: 400px;
-}
-.div-cohete {
-    height: 410px;
-}
-
-nav .active {
-    border: 1px solid #E20000;
-    border-radius: 20px;
-}
-
-#proyectos p {
-    font-size: 14px;
-}
-
-#proyectos img {
-    height: 177px;
-}
-
-#proyectos .card p {
-    height: 90px
-}
-.color-gradiente{
-    background: rgba(184,37,20,1);
-    background: -moz-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(184,37,20,1)), color-stop(47%, rgba(214,52,30,1)), color-stop(70%, rgba(240,47,23,1)), color-stop(100%, rgba(240,47,23,1)));
-    background: -webkit-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
-    background: -o-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
-    background: -ms-linear-gradient(left, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
-    background: linear-gradient(to right, rgba(184,37,20,1) 0%, rgba(214,52,30,1) 47%, rgba(240,47,23,1) 70%, rgba(240,47,23,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b82514', endColorstr='#f02f17', GradientType=1 );
-}
-#proyectos h2 {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: white;
-    padding: 0px;
-    margin: 0px;
-}
-
+/*Responsive*/
 @media (max-width: 750px) {
     #contacto, #index{
         background-image: url("../images/fondo-proyectos.png");
         background-size: contain;
         background-repeat: no-repeat;
+    }
+    #index .input-home p {
+        color: #E20000;
+        border: 1px solid #E20000;
     }
     #proyectos {
         background-size: contain;
